@@ -1,5 +1,5 @@
-import com.bean.AdminInfo;
-import com.dao.IAdminInfoDAO;
+import com.business.bean.AdminInfo;
+import com.business.dao.IAdminInfoDAO;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

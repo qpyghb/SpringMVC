@@ -2,13 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 设置为IAdminInfoDao接口方法提供sql语句配置 -->
-<mapper namespace="com.dao.IAdminInfoDAO">
+<mapper namespace="com.business.dao.IAdminInfoDAO">
 
-    <select id="getAdminInfo" resultType="com.bean.AdminInfo">
+    <select id="getAdminInfo" resultType="com.business.bean.AdminInfo">
         SELECT * FROM admin WHERE name = #{name} and password = #{password}
     </select>
 
-    <select id="findAdminInfoById" resultType="com.bean.AdminInfo" parameterType="int">
+    <select id="findAdminInfoById" resultType="com.business.bean.AdminInfo" parameterType="int">
         SELECT * FROM admin WHERE id = #{id}
     </select>
 

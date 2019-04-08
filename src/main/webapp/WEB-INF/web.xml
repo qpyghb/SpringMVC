@@ -45,4 +45,9 @@
     <param-value>classpath:spring-*.xml</param-value>
   </context-param>
 
+  <!--启动页-->
+  <welcome-file-list>
+    <welcome-file>/WEB-INF/views/admin/login.jsp</welcome-file>
+  </welcome-file-list>
+
 </web-app>
